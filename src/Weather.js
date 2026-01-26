@@ -40,7 +40,7 @@ export default function Weather(props) {
 
   function handleSubmit(event) {
     event.preventDefault();
-    search(city);
+    search();
   }
 
   function handleCityChange(event) {
@@ -69,8 +69,10 @@ export default function Weather(props) {
           </div>
         </div>
       </form>
-      {loading && <p>Loading...</p>}
+
       {error && <div className="alert alert-danger mt-3">{error}</div>}
+      {!weatherData.ready && !loading && search()}
+      {loading && <p>Loading...</p>}
       {weatherData.ready && <WeatherInfo data={weatherData} />}
     </div>
   );
