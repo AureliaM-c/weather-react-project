@@ -24,6 +24,15 @@ function App() {
         >
           open-sourced on Github
         </a>
+        and{" "}
+        <a
+          href="https://weather-react-project-sc.netlify.app/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          hosted on Netlify
+        </a>
+        .
       </footer>
     </div>
   );
