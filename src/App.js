@@ -23,7 +23,7 @@ function App() {
           rel="noreferrer"
         >
           open-sourced on Github
-        </a>
+        </a>{" "}
         and{" "}
         <a
           href="https://weather-react-project-sc.netlify.app/"
